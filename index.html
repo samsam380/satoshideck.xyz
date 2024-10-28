@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bitcoin Hardware Wallet Crowdfunding</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Bitcoin Hardware Wallet Crowdfunding</h1>
+        <p>Help us build an open-source Bitcoin hardware wallet with secure QR code scanning and versatile functionality!</p>
+    </header>
+
+    <main>
+        <section id="project-info">
+            <h2>About the Project</h2>
+            <p>We're developing a Bitcoin hardware wallet using the Lilygo T Deck with a camera module for secure QR code scanning. All firmware and software will be open-source and community-driven!</p>
+        </section>
+
+        <section id="donate">
+            <h2>Contribute with Bitcoin</h2>
+            <p>Your contributions go directly to supporting development, hardware sourcing, and open-source collaboration.</p>
+            <button id="donateMainnet" onclick="openBTCPay('mainnet')">Donate with Bitcoin (Mainnet)</button>
+            <button id="donateLightning" onclick="openBTCPay('lightning')">Donate with Bitcoin (Lightning)</button>
+            
+            <!-- Donation Tracking Section -->
+            <div id="donation-tracker">
+                <p>Current Donations: <span id="current-donations">0</span> BTC of <span id="goal">1</span> BTC goal</p>
+                <div class="progress-bar">
+                    <div class="progress" id="progress"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="updates">
+            <h2>Project Updates</h2>
+            <p>Follow our journey as we bring this project to life. Check back here for regular updates!</p>
+            <!-- Future updates will be listed here -->
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Have questions or suggestions? Reach out to us via <a href="mailto:contact@yourdomain.com">contact@yourdomain.com</a>.</p>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
