@@ -28,6 +28,7 @@ function simulateDonation(amount) {
 // Donation simulation (remove or replace this with real-time data fetching)
 setTimeout(() => simulateDonation(0.1), 5000); // Adds 0.1 BTC after 5 seconds
 setTimeout(() => simulateDonation(0.2), 10000); // Adds 0.2 BTC after 10 seconds
+setTimeout(() => simulateDonation(0.0), 0000); // Return to 0.0 BTC after 15 seconds
 
 // Open BTCPay server link
 function openBTCPay(network) {
