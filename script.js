@@ -39,3 +39,19 @@ function openBTCPay(network) {
     }
     window.open(url, "_blank");
 }
+
+// Function to show the Bitcoin address
+function showBitcoinAddress() {
+    const addressContainer = document.getElementById("bitcoinAddressContainer");
+    addressContainer.style.display = "block";
+}
+
+// Function to copy the Bitcoin address to the clipboard
+function copyBitcoinAddress() {
+    const bitcoinAddress = document.getElementById("bitcoinAddress").textContent;
+    navigator.clipboard.writeText(bitcoinAddress).then(() => {
+        alert("Bitcoin address copied to clipboard!");
+    }).catch(err => {
+        console.error("Could not copy text: ", err);
+    });
+}
