@@ -21,7 +21,16 @@
         <section id="donate">
             <h2>Contribute with Bitcoin</h2>
             <p>Your contributions go directly to supporting development, hardware sourcing, and open-source collaboration.</p>
-            <button id="donateMainnet" onclick="openBTCPay('mainnet')">Donate with Bitcoin</button>
+            
+            <!-- Button to Show Bitcoin Address -->
+            <button id="showAddressButton" onclick="showBitcoinAddress()">Donate with Bitcoin</button>
+            
+            <!-- Bitcoin Address Display -->
+            <div id="bitcoinAddressContainer" style="display: none; margin-top: 10px;">
+                <p>Bitcoin Address:</p>
+                <p id="bitcoinAddress">bc1qdda4sx9tduex9j0r4030dhvzczcz628pj32xxtsgqjvtcqc06s5s2s0rjn</p>
+                <button onclick="copyBitcoinAddress()">Copy Address</button>
+            </div>
             
             <!-- Donation Tracking Section -->
             <div id="donation-tracker">
@@ -40,7 +49,7 @@
 
         <section id="contact">
             <h2>Contact Us</h2>
-            <p>Have questions or suggestions? Reach out to us via <a href="mailto:0x999666@protonmail.com">contact@yourdomain.com</a>.</p>
+            <p>Have questions or suggestions? Reach out to us via <a href="mailto:0x999666@protonmail.com">0x999666@protonmail.com</a>.</p>
         </section>
     </main>
 
