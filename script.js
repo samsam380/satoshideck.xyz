@@ -1,6 +1,6 @@
 // Set the donation goal in BTC
 const goalAmount = 1; // Goal of 1 BTC
-let currentDonations = 0.5; // Replace with actual amount if available
+let currentDonations = 0.0; // Replace with actual amount if available
 
 // Function to update the donation display and progress bar
 function updateDonationTracker() {
