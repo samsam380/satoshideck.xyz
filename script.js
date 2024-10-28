@@ -9,10 +9,17 @@ function updateDonationTracker() {
     
     // Calculate progress percentage
     const progressPercentage = (currentDonations / goalAmount) * 100;
-    progressElement.style.width = progressPercentage + "%";
+    
+    // Set the width of the progress bar based on donation progress
+    progressElement.style.width = `${progressPercentage}%`;
     
     // Update donation text
     currentDonationsElement.textContent = currentDonations.toFixed(2); // Displayed to two decimal places
+
+    // Hide the progress bar if currentDonations is 0
+    if (currentDonations === 0) {
+        progressElement.style.width = "0%";
+    }
 }
 
 // Call updateDonationTracker initially to display current state
@@ -26,9 +33,7 @@ function simulateDonation(amount) {
 }
 
 // Donation simulation (remove or replace this with real-time data fetching)
-setTimeout(() => simulateDonation(0.1), 5000); // Adds 0.1 BTC after 5 seconds
-setTimeout(() => simulateDonation(0.2), 10000); // Adds 0.2 BTC after 10 seconds
-setTimeout(() => simulateDonation(0), 15000); // Resets to 0 BTC after 15 seconds
+setTimeout(() => simulateDonation(0.0), 5000); // Shows 0 bitcoin
 
 // Open BTCPay server link
 function openBTCPay(network) {
